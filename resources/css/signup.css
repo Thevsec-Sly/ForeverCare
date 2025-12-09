@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global */
+.body {
+  @apply h-screen bg-gradient-to-t from-purple-300 to-blue-300 bg-no-repeat bg-cover overflow-x-hidden flex items-center justify-center font-sans;
+}
+
+.logo{
+  @apply w-32 items-center;
+}
+
+.logo img {
+  @apply flex items-center p-5 min-h-24 min-w-24;
+}
+
+.containers {
+  @apply flex w-11/12 h-5/6 bg-white shadow-lg rounded-lg overflow-hidden;
+}
+
+/* Illustration Section */
+.illustration {
+  @apply hidden md:flex md:w-3/4 bg-gradient-to-br from-indigo-900 to-blue-700 text-white items-center justify-center relative;
+}
+
+.logo {
+  @apply absolute top-6 left-6 text-2xl font-bold flex items-center space-x-2;
+}
+
+.logo-icon {
+  @apply bg-white text-indigo-700 rounded-full px-2 py-1;
+}
+
+.illustration-text {
+  @apply text-center;
+}
+
+.illustration-text h2 {
+  @apply text-3xl font-bold mb-4;
+}
+
+.illustration-text p {
+  @apply text-lg;
+}
+
+/* Form Section */
+.form-section {
+  @apply w-full md:w-1/3 px-12 my-6 mt-20;
+}
+
+.form-title {
+  @apply text-2xl font-bold text-gray-800 mb-1 mt-8;
+}
+
+.form-subtitle {
+  @apply text-gray-600 mb-2;
+}
+
+.form {
+  @apply space-y-2;
+}
+
+.form-group label {
+  @apply block text-sm font-medium text-gray-700 mt-2;
+}
+
+.form-group input {
+  @apply mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none;
+}
+
+.form-options {
+  @apply flex justify-between items-center;
+}
+
+.remember {
+  @apply flex items-center space-x-2 text-sm rounded-md text-gray-600;
+}
+
+/* Divider */
+.divider {
+  @apply flex items-center my-6;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  @apply flex-1 border-t border-gray-300;
+}
+
+.divider span {
+  @apply mx-4 text-gray-500 text-sm;
+}
+
+/* Social Buttons */
+.social-buttons {
+  @apply space-y-3;
+}
+
+.btn-social {
+  @apply w-full flex items-center justify-center py-2 rounded-lg border font-medium transition;
+}
+
+.google {
+  @apply border-gray-300 text-gray-700 hover:bg-gray-100;
+}
+
+.apple {
+  @apply border-gray-300 text-gray-700 hover:bg-gray-100;
+}
+
+.phone {
+  @apply border-gray-300 text-gray-700 hover:bg-gray-100;
+}
+
+.facebook {
+  @apply border-gray-300 text-gray-700 hover:bg-gray-100;
+}
+
+.forgot {
+  @apply text-sm text-indigo-600 hover:underline;
+}
+
+.btn {
+  @apply w-full bg-indigo-600 text-white py-2 my-4 rounded-lg hover:bg-indigo-700 transition;
+}
+
+.signup {
+  @apply mt-6 text-center text-sm text-gray-600;
+}
+
+.signup a {
+  @apply text-indigo-600 hover:underline;
+}

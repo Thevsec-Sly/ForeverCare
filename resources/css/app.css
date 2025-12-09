@@ -1,11 +1,28 @@
-@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+.body {
+  @apply h-screen bg-gradient-to-t from-purple-300 to-blue-300 bg-no-repeat bg-cover overflow-x-hidden font-sans;
 }
+
+.navbar{
+  @apply flex gap-2 w-full mb-72 bg-gradient-to-r from-blue-200 to-purple-200 h-12 p-2 justify-end;
+}
+
+.nav-section{
+  @apply inline-block justify-items-center my-1;
+}
+
+.nav-links{
+  @apply px-8 py-1.5 bg-blue-300 text-black border border-transparent hover:border-blue-400 rounded-md;
+}
+
+  .layout-container {
+    @apply  justify-items-center h-96 rounded-2xl w-1/2 py-28 justify-self-center bg-gradient-to-br from-indigo-900 to-blue-700;
+  }
+
+
+  .logo-text {
+    @apply text-9xl text-justify font-bold align-middle text-white;
+  }
